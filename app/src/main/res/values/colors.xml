@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="money_green">#57C168</color>
+    <color name="money_green_medium">#41B36D</color>
+    <color name="money_purple">#7A49D0</color>
+    <color name="soft_money_green">#C9F1D1</color>
+    <color name="soft_money_green_medium">#B4E9C2</color>
+    <color name="soft_money_purple">#D9C8F1</color>
+    <color name="soft_background">#F6F9F6</color>
+    <color name="soft_border_gray">#E0E0E0</color>
+    <color name="soft_back">#F3EFFA</color>
+
+</resources>

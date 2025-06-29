@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logoMenu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Logo Menu" />
+
+        <!-- Item Menu -->
+        <LinearLayout
+            android:id="@+id/btnAbout"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_info"
+                android:contentDescription="Icon Tentang" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang Aplikasi"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnDataset"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_dataset"
+                android:contentDescription="Icon Dataset" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dataset"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnFeature"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_fitur"
+                android:contentDescription="Icon Fitur" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnModel"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_model"
+                android:contentDescription="Icon Model" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnDetect"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_money_detect"
+                android:contentDescription="Icon Deteksi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deteksi"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnExit"
+            style="@style/MenuButtonStyle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Icon Keluar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

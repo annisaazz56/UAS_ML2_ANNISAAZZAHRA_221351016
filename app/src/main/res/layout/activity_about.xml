@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_about_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_info"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang Aplikasi"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#4B2A75" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_purple"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi ini digunakan untuk mendeteksi keaslian uang berdasarkan 4 parameter numerik: Variance, Skewness, Curtosis, dan Entropy. Dengan bantuan model klasifikasi TensorFlow Lite, hasil deteksi dapat diketahui secara cepat dan akurat."
+                android:textSize="16sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_purple"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dataset berasal dari website Kaggle yang dibuat oleh Shantanu untuk pelatihan model klasifikasi. Format data adalah .csv dengan input numerik dan label keaslian (asli/palsu)."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/linkDataset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Dataset: Banknote Authentication UCI"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_purple"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cara Kerja Aplikasi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Masukkan 4 nilai input (Variance, Skewness, Curtosis, Entropy).\n2. Tekan tombol 'Deteksi'.\n3. Hasil berupa prediksi 'Asli' atau 'Palsu' akan muncul di bawahnya."
+                android:textSize="16sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made with ❤️ by\nAnnisa Azzahra\n221351016\nSTT Wastukancana"
+            android:textSize="14sp"
+            android:textColor="#EEEEEE"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="4dp">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/money_purple" />
+
+    <!-- Subjudul -->
+    <TextView
+        android:id="@+id/tvSectionSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subjudul"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textColor="@color/money_green"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/tvSectionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi dari bagian ini menjelaskan bagaimana cara kerja model dengan bahasa yang mudah dipahami."
+        android:textSize="15sp"
+        android:textColor="#444444"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Gambar -->
+    <ImageView
+        android:id="@+id/ivSectionImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:background="@color/soft_back"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+</LinearLayout>

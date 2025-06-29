@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logoMenu"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Logo Menu" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai Mendeteksi Uang Asli atau Palsu"
+            android:backgroundTint="@color/soft_money_purple"
+            android:textColor="@color/money_purple" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Made with ❤️ by\nAnnisa Azzahra\n221351016\nSTT Wastukancana"
+        android:textSize="14sp"
+        android:textColor="@color/money_purple"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

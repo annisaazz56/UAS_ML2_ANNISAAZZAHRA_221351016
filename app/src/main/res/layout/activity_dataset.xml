@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul Dataset -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_dataset"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATASET"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/money_purple"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Deskripsi Dataset -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dataset_box_solid"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/money_purple"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dataset terdiri dari 4 kolom data numerik: Variance, Skewness, Curtosis, dan Entropy. Data ini digunakan sebagai input untuk mendeteksi keaslian uang menggunakan model machine learning."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data diambil dari Kaggle dan diproses menjadi format .tflite agar dapat digunakan di aplikasi Android secara offline dan efisien."
+                android:textSize="16sp"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <!-- Judul Tabel -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh 10 data acak untuk pelatihan model deteksi uang:"
+            android:textSize="16sp"
+            android:textColor="@color/money_purple"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tabel Data -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="11"
+                android:alignmentMode="alignMargins"
+                android:rowOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+                <!-- Header -->
+                <TextView style="@style/GridHeader" android:text="Variance" />
+                <TextView style="@style/GridHeader" android:text="Skewness" />
+                <TextView style="@style/GridHeader" android:text="Curtosis" />
+                <TextView style="@style/GridHeader" android:text="Entropy" />
+
+                <!-- Data Rows -->
+                <TextView style="@style/GridCell" android:text="2.3678" />
+                <TextView style="@style/GridCell" android:text="-6.839" />
+                <TextView style="@style/GridCell" android:text="8.4207" />
+                <TextView style="@style/GridCell" android:text="-0.44828" />
+
+                <TextView style="@style/GridCell" android:text="-2.5346" />
+                <TextView style="@style/GridCell" android:text="-0.77392" />
+                <TextView style="@style/GridCell" android:text="3.3602" />
+                <TextView style="@style/GridCell" android:text="0.00171" />
+
+                <TextView style="@style/GridCell" android:text="0.33565" />
+                <TextView style="@style/GridCell" android:text="6.8369" />
+                <TextView style="@style/GridCell" android:text="0.69718" />
+                <TextView style="@style/GridCell" android:text="-0.55691" />
+
+                <TextView style="@style/GridCell" android:text="-0.539" />
+                <TextView style="@style/GridCell" android:text="-5.167" />
+                <TextView style="@style/GridCell" android:text="3.4399" />
+                <TextView style="@style/GridCell" android:text="0.052141" />
+
+                <TextView style="@style/GridCell" android:text="1.5268" />
+                <TextView style="@style/GridCell" android:text="-5.5871" />
+                <TextView style="@style/GridCell" android:text="8.6564" />
+                <TextView style="@style/GridCell" android:text="-1.722" />
+
+                <TextView style="@style/GridCell" android:text="-1.7322" />
+                <TextView style="@style/GridCell" android:text="-9.2828" />
+                <TextView style="@style/GridCell" android:text="7.719" />
+                <TextView style="@style/GridCell" android:text="-7.168" />
+
+                <TextView style="@style/GridCell" android:text="-2.7914" />
+                <TextView style="@style/GridCell" android:text="1.7734" />
+                <TextView style="@style/GridCell" android:text="6.7756" />
+                <TextView style="@style/GridCell" android:text="-0.39915" />
+
+                <TextView style="@style/GridCell" android:text="2.031" />
+                <TextView style="@style/GridCell" android:text="1.852" />
+                <TextView style="@style/GridCell" android:text="-3.0121" />
+                <TextView style="@style/GridCell" android:text="0.003003" />
+
+                <TextView style="@style/GridCell" android:text="4.3398" />
+                <TextView style="@style/GridCell" android:text="-5.3036" />
+                <TextView style="@style/GridCell" android:text="3.8803" />
+                <TextView style="@style/GridCell" android:text="-0.70432" />
+
+                <TextView style="@style/GridCell" android:text="-5.4808" />
+                <TextView style="@style/GridCell" android:text="8.1819" />
+                <TextView style="@style/GridCell" android:text="0.27818" />
+                <TextView style="@style/GridCell" android:text="-5.0323" />
+            </GridLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

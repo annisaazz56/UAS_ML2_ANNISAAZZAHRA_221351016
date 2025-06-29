@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo Utama -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Ilustrasi deteksi uang"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Judul + Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_money_detect"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Icon Deteksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deteksi Uang Asli/Palsu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/money_purple" />
+        </LinearLayout>
+
+        <!-- Deskripsi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan 4 nilai numerik hasil ekstraksi fitur dari uang kertas, lalu tekan tombol deteksi untuk melihat keasliannya."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Input Variance -->
+        <EditText
+            android:id="@+id/editVariance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Variance"
+            android:inputType="numberSigned|numberDecimal"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Skewness -->
+        <EditText
+            android:id="@+id/editSkewness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skewness"
+            android:inputType="numberSigned|numberDecimal"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Curtosis -->
+        <EditText
+            android:id="@+id/editCurtosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Curtosis"
+            android:inputType="numberSigned|numberDecimal"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Entropy -->
+        <EditText
+            android:id="@+id/editEntropy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entropy"
+            android:inputType="numberSigned|numberDecimal"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Deteksi -->
+        <Button
+            android:id="@+id/btnDetect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deteksi Sekarang"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:background="@drawable/button_rounded_green"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Loading Progress -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Hasil Deteksi -->
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/result_card_bg"
+            android:padding="16dp"
+            android:text="Hasil akan muncul di sini"
+            android:textSize="16sp"
+            android:textColor="@color/money_purple"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>
